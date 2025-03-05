@@ -6,6 +6,8 @@ import (
 )
 
 func main() {
-	var todoList todolist.TodoList = todolist.TodoList{Tasks: []task.Task{}}
+	var tasks todolist.TodoList = todolist.TodoList{Tasks: []task.Task{}}
+	tasks.AddTask()
 
+	tasks.PrintAllTasks()
 }
